@@ -1,0 +1,38 @@
+#header{
+    
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #434343;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    .home{
+        p{
+            margin-left: 2vw;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+    .link{
+        text-decoration: none;
+    }
+
+    .nav{
+        margin-right: 2vw;
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        
+        }
+        p{
+            margin-right: 5vw;
+            font-weight: 200;
+            font-size: 1.25rem;
+            color: white;
+          
+            
+        }
+}

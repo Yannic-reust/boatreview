@@ -1,8 +1,7 @@
 <template>
   <div id="home" class="homecontainer">
       <Header-app></Header-app>
-      <h1>test</h1>
-   
+      <Footer-app></Footer-app>
   </div>
 </template>
 <style src="./home.scss" lang="scss" scoped></style>
