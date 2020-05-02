@@ -1,16 +1,22 @@
 <template>
-  <div id="home" class="homecontainer">
+  <div id="home">
       <Header-app></Header-app>
-
       <h1>News</h1> 
-      <News-container></News-container>
-      <h1>Reviews</h1>
-      <Reviews-container></Reviews-container>
-      <h1>Buy</h1>
-      <Buy-container></Buy-container>
-
-
-
+        <div class="content">
+          <News-container></News-container>
+          <News-container></News-container>
+          <News-container></News-container>
+          <News-container></News-container>
+          </div>
+          <h1>Reviews</h1>
+            <div class="content">
+          <Reviews-container></Reviews-container>
+           </div>
+          <h1>Buy</h1>
+            <div class="content">
+          <Buy-container></Buy-container>
+           </div>
+      
       <Footer-app></Footer-app>
   </div>
 </template>
