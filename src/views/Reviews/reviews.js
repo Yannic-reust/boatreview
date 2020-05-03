@@ -3,6 +3,7 @@ import Footer from '../../components/Footer/footer.vue';
 
 export default {
   props: {
+    
 
   },
   data() {

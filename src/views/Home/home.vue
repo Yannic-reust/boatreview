@@ -3,10 +3,8 @@
       <Header-app></Header-app>
       <h1>News</h1> 
         <div class="content">
-          <News-container></News-container>
-          <News-container></News-container>
-          <News-container></News-container>
-          <News-container></News-container>
+          <News-container v-bind:posts="posts"></News-container>
+          
           </div>
           <h1>Reviews</h1>
             <div class="content">

@@ -1,8 +1,16 @@
 #newsblock{
+    display: flex;
+    justify-content: center;
     .content{
-        border-style: solid;
-        border-width: 1.2px;
-        width: 20vw;
+
+        display: flex;
+       justify-content: space-around;
+       .block{
+           margin: 5vw;
+           border-style: solid;
+           border-width: 1.2px;
+           width: 20vw;
+       }
         h3{
             background-color: #434343;
             color:white;
