@@ -17,5 +17,6 @@ export default {
   font-family: Arial, sans-serif;
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
 }
 </style>

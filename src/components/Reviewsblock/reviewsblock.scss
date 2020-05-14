@@ -1,0 +1,79 @@
+#reviewsblock{
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    .content{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        
+        flex-wrap: wrap;
+
+       .block{
+           
+           border-style: solid;
+           border-width: 1%;
+           width: 23%;
+           overflow: hidden;
+           margin-bottom: 5%;
+        
+       }
+
+        h3{
+            background-color: #434343;
+            color:white;
+            padding: 12px;
+            font-weight: 600;
+            font-size: 26px;
+     
+        }
+        h4{
+            padding: 6px;
+            font-weight: 100;
+            font-size: 20px;
+        }
+        p{
+            padding: 6px;
+            padding-top: 0px;
+        }
+    }
+}
+$breakpoint-phone: 576px;
+$breakpoint-tablet: 768px;
+
+
+
+@media (max-width: $breakpoint-phone) {
+    
+    .block{
+        width: 100% !important;
+    
+    h3{
+         
+            font-size: 22px;
+          
+    }
+    h4{
+        font-size: 16px;
+       }
+       }
+}
+
+@media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-phone) {
+    
+    .block{
+    width: 48% !important;
+    
+   h3{
+       font-size: 18px;
+   }
+   h4{
+    font-size: 12px;
+   }
+   }
+}
+
+
+
