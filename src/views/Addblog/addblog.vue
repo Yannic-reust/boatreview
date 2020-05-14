@@ -13,6 +13,8 @@
                 <textarea name="maintext" id="maintext" cols="30" rows="10" v-model="posts.Text"></textarea>
                 <p>Price in CHF</p> 
                 <input type="number" v-model="posts.Price">
+                <p>Contact</p> 
+                <input type="text" v-model="posts.Contact">
                 <div class="imgupload">
                     <input type="file" @change="previewImage" accept="image/*">
                     <p>Progress:{{uploadValue.toFixed()+"%"}}</p>

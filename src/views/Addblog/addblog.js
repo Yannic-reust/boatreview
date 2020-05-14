@@ -13,7 +13,8 @@ export default {
             CatchText: '',
             Text: '',
             Price: '',
-            ImageName:''
+            ImageName:'',
+            Contact:''
         },
         imageData: null,
         picture: null,
@@ -48,4 +49,5 @@ export default {
      
     }
 },
+
 };

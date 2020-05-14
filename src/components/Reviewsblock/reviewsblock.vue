@@ -4,7 +4,7 @@
 
     <div class="content">
       
-      <div v-for="(post, i) in posts" :key="i" class="block">
+      <div v-for="(post, i) in posts.slice(0,4)" :key="i" class="block">
          <router-link to="/News" > <h3>{{post.BoatName}}</h3></router-link>
          <h4>{{post.Heading}}</h4>
         <p>{{post.CatchText}}</p>
