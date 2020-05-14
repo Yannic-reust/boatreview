@@ -6,14 +6,9 @@
          <router-link to="/News" > <h3>{{post.BoatName}}</h3></router-link>
          <h4>{{post.Heading}}</h4>
         <p>{{post.CatchText}}</p>
+
+        <img :src="post.ImageURL" width="200px" class="preview-image">
         
-
-
-
-         <img
-                  src="https://firebasestorage.googleapis.com/v0/b/boatreview-84b38.appspot.com/o/IMG_0857.JPG?alt=media&token=31f3296e-aa04-4bf4-81d4-c5dc7af33f7b"
-                  height="130px"
-                >
       </div>
      
     </div>

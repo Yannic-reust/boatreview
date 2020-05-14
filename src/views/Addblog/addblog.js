@@ -13,8 +13,8 @@ export default {
             CatchText: '',
             Text: '',
             Price: '',
-            ImageName:'',
-            Contact:''
+            Contact:'',
+            ImageURL:''
         },
         imageData: null,
         picture: null,
@@ -33,19 +33,21 @@ export default {
       },
   
       onUpload(){
-        this.posts.ImageName = this.imageData.name;
+        
         this.picture=null;
         const storageRef=firebase.storage().ref(`${this.imageData.name}`).put(this.imageData);
         storageRef.on(`state_changed`,snapshot=>{
-         
           this.uploadValue = (snapshot.bytesTransferred/snapshot.totalBytes)*100;
         }, error=>{console.log(error.message)},
         ()=>{this.uploadValue=100;
           storageRef.snapshot.ref.getDownloadURL().then((url)=>{
             this.picture =url;
+            this.posts.ImageURL = this.picture;
+            this.$http.post('https://boatreview-84b38.firebaseio.com/posts.json', this.posts);
           });});
+          
       
-        this.$http.post('https://boatreview-84b38.firebaseio.com/posts.json', this.posts);
+        
      
     }
 },
