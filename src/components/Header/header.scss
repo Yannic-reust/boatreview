@@ -36,3 +36,17 @@
             
         }
 }
+$breakpoint-phone: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-small-desktop: 1300px;
+
+
+@media (max-width: $breakpoint-phone) {
+
+}
+@media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-phone) {
+    +
+}
+@media (max-width: $breakpoint-small-desktop) and (min-width: $breakpoint-tablet) {
+
+}

@@ -1,5 +1,4 @@
 #newsblock{
-
     display: flex;
     justify-content: center;
     width: 100%;
@@ -8,11 +7,9 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        
         flex-wrap: wrap;
 
        .block{
-           
            border-style: solid;
            border-width: 1%;
            width: 23%;
@@ -20,59 +17,110 @@
            margin-bottom: 5%;
         
        }
-
-        h3{
-            background-color: #434343;
-            color:white;
-            padding: 12px;
-            font-weight: 600;
-            font-size: 26px;
-     
+       h3{
+        background-color: #434343;
+        color:white;
+        padding: 12px;
+        font-weight: 600;
+        font-size:1.8rem;
+        
+    }
+        
+        .textblock{
+            height: 120px;
+            h4{
+                padding: 6px;
+                font-weight: 100;
+                font-size: 1.2rem;
+            }
+         
+            p{
+                padding: 6px;
+                padding-top: 0px;
+                font-size: 1rem;
+            }
         }
-        h4{
-            padding: 6px;
-            font-weight: 100;
-            font-size: 20px;
-        }
-        p{
-            padding: 6px;
-            padding-top: 0px;
+       
+        .preview-image{
+            width: 100%;
+            margin-bottom: -2%;
+           
+  
+        
         }
     }
 }
+
 $breakpoint-phone: 576px;
 $breakpoint-tablet: 768px;
-
-
+$breakpoint-small-desktop: 1300px;
 
 @media (max-width: $breakpoint-phone) {
-    
+
     .block{
         width: 100% !important;
-    
-    h3{
+        h3{
+            font-size:2rem!important;
+        }
+        p{
+            font-size: 1.4rem!important;
+        }
+        .textblock{
+            height: 120px!important;
+           
+            h4{
+                font-size: 1.4rem!important;
+            }
          
-            font-size: 22px;
-          
+            p{
+                font-size: 1.4rem!important;
+            }
+        }
     }
-    h4{
-        font-size: 16px;
-       }
-       }
 }
 
 @media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-phone) {
     
     .block{
-    width: 48% !important;
-    
-   h3{
-       font-size: 18px;
+        width: 48% !important;
+    h3{
+        font-size:1.8rem !important;
+    }
+    p{
+        font-size: 1.15rem !important;
+    }
+    .textblock{
+        
+        height: 160px !important;
+        h4{
+            font-size: 1.4rem !important;
+        }
+     
+        p{
+            font-size: 1.15rem !important;
+        }
+    }
    }
-   h4{
-    font-size: 12px;
-   }
-   }
+}
+@media (max-width: $breakpoint-small-desktop) and (min-width: $breakpoint-tablet) {
+
+    h3{
+        font-size:1.7rem;
+    }
+    p{
+        font-size: 0.85rem !important;
+    }
+    .textblock{
+        height: 140px !important;
+        
+        h4{
+            font-size: 1.1rem !important;
+        }
+     
+        p{
+            font-size: 0.85rem !important;
+        }
+    }
 }
 
 
