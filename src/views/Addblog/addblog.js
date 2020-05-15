@@ -33,7 +33,6 @@ export default {
       },
   
       onUpload(){
-        
         this.picture=null;
         const storageRef=firebase.storage().ref(`${this.imageData.name}`).put(this.imageData);
         storageRef.on(`state_changed`,snapshot=>{
