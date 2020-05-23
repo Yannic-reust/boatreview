@@ -1,7 +1,7 @@
 <template>
   <div id="contact">
-      <Header-app></Header-app>
-      <h1>Type</h1>
+   <Header-app v-bind:moblieView="moblieView"></Header-app>
+      <h1>Contact</h1>
       <Footer-app></Footer-app>
   </div>
 </template>

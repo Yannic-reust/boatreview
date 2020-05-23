@@ -4,12 +4,14 @@ import Newscontainer from  '../../components/Newsblock/newsblock.vue';
 import Reviewscontainer from  '../../components/Reviewsblock/reviewsblock.vue';
 import Buycontainer from  '../../components/Buyblock/buyblock.vue';
 
+
 export default {
-  props: {
-  },
+
   data() {
     return {
       posts:[],
+      moblieView: true,
+
     };
   },
   components: {
@@ -21,9 +23,15 @@ export default {
 
   },
   methods: {
+    handleView(){
+      this.moblieView = window.innerWidth <= 768
+    }
+
    
   },
   created() {
+    this.handleView()
+
     this.$http.get('https://boatreview-84b38.firebaseio.com/posts.json').then(function(data){
         return data.json()
     }).then(function(data){
@@ -35,6 +43,10 @@ export default {
         this.posts = postsArray;
         //console.log(this.blogs);
     });
+
+    
 },
+
+
   
 };

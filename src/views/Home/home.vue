@@ -1,6 +1,10 @@
 <template>
   <div id="home">
-      <Header-app></Header-app>
+
+        
+
+      <Header-app v-bind:moblieView="moblieView"></Header-app>
+      
       <div id="main">
 
           <h1>News</h1> 

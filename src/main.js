@@ -4,6 +4,7 @@ import Routes from './routes.js'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import firebase from 'firebase'
+import VScrollLock from 'v-scroll-lock'
 
 Vue.config.productionTip = false
 
@@ -20,6 +21,7 @@ firebase.initializeApp({
 
 Vue.use(VueResource);
 Vue.use(VueRouter);
+Vue.use(VScrollLock)
 
 const router = new VueRouter({
     routes: Routes

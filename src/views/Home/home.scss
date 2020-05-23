@@ -1,3 +1,5 @@
+@import url("https://use.fontawesome.com/releases/v5.0.6/css/all.css");
+
 #home{
     #main{
     min-height: 100vh !important;
@@ -15,5 +17,15 @@
     margin-left: 5%;
  
    }
- 
+ #navigation-icon{
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    i{
+        font-size: 2rem;
+        color: black;
+    }
+}
+
+
 }

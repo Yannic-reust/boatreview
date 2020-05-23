@@ -14,6 +14,13 @@ export default {
     'Footer-app': Footer,
   },
   methods: {
+    handleView(){
+      this.moblieView = window.innerWidth <= 768
+    }
    
   },
+  created(){
+    this.handleView()
+
+  }
 };

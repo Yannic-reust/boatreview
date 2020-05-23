@@ -11,7 +11,9 @@
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "firebase": "^7.14.2",
+    "v-scroll-lock": "^1.2.0",
     "vue": "^2.6.11",
+    "vue-burger-menu": "^2.0.5",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.1.6",
     "yargs-parser": "^18.1.3"

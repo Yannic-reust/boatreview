@@ -1,6 +1,6 @@
 <template>
   <div id="buy" class="homecontainer">
-      <Header-app></Header-app>
+      <Header-app v-bind:moblieView="moblieView"></Header-app>
      <div class="content">
       <h1>Buy</h1>
 

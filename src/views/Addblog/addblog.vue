@@ -1,6 +1,6 @@
 <template>
   <div id="addblog">
-      <Header-app></Header-app>
+       <Header-app v-bind:moblieView="moblieView"></Header-app>
         <div class="form">
             <form>
                 <p>Boat Name</p> 

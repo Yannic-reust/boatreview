@@ -14,9 +14,14 @@ export default {
     'Footer-app': Footer,
   },
   methods: {
+    handleView(){
+      this.moblieView = window.innerWidth <= 768
+    }
    
   },
   created() {
+    this.handleView()
+
     this.$http.get('https://boatreview-84b38.firebaseio.com/posts.json').then(function(data){
         return data.json()
     }).then(function(data){

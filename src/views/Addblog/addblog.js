@@ -26,6 +26,11 @@ export default {
     'Footer-app': Footer,
   },
   methods: {
+    handleView(){
+      this.moblieView = window.innerWidth <= 768
+    },
+
+
     previewImage(event) {
         this.uploadValue=0;
         this.picture=null;
@@ -50,5 +55,8 @@ export default {
      
     }
 },
+created() {
+  this.handleView()
+}
 
 };

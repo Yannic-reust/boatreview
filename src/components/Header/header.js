@@ -1,18 +1,23 @@
-import Search from '../Search/search.vue';
-
 export default {
     props: {
-  
+        moblieView:"",
+        
     },
     data() {
       return {
+        showNav: false
       };
     },
     components: {
-      'search': Search,
+
 
     },
     methods: {
-     
-    },
+      opennav(){
+        this.showNav = true
+        },
+      closenav(){
+        this.showNav = false
+      }
+    }
   };

@@ -1,5 +1,4 @@
 #header{
-    
     padding-top: 2vh;
     padding-bottom: 2vh;
     background-color: #434343;
@@ -27,13 +26,52 @@
         text-decoration: none;
         
         }
-        p{
+    p{
             margin-right: 5vw;
             font-weight: 200;
             font-size: 1.25rem;
             color: white;
-          
+    }
+
+
+        #navigation-icon{
+            font-size:1.5rem;
+            position: absolute;
+            left: 92.5%;
+        }
+        .moblienav-container{
+            height: 100vh;
+            width: 100%;
+            background-color: #434343;
             
+            
+        .mobilenav{
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                margin-top: 3vh;
+                font-size: 1.75rem;
+            }
+        }
+        
+            #navigation-icon{
+                font-size:1.5rem;
+                position: absolute;
+                left: 92.5%;
+            }
+        
+            .home2{
+                
+
+                p{
+                    margin-left: 2vw;
+                    font-size: 1.5rem;
+                    font-weight: Bold;
+                    text-decoration: none;
+                }
+            }
         }
 }
 $breakpoint-phone: 576px;
@@ -45,8 +83,10 @@ $breakpoint-small-desktop: 1300px;
 
 }
 @media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-phone) {
-    +
+    
 }
 @media (max-width: $breakpoint-small-desktop) and (min-width: $breakpoint-tablet) {
 
 }
+
+
