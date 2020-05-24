@@ -1,7 +1,8 @@
 <template>
   <div id="footer" >
       <div class="link">
-         <router-link to="/Contact" class="link"><p>Contact</p></router-link>
+         <router-link to="/Contact" class="link2"><p>Contact</p></router-link>
+         <router-link to="/Impressum" class="link2"><p>Impressum</p></router-link>
       </div>
      
        <h3>© Boat Review 2020</h3>

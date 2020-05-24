@@ -1,0 +1,30 @@
+#contact{
+    h1{
+        margin-left: 5%;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: 2rem;
+    }
+    .content{
+        height: 80.8vh;
+        margin-left: 5%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 1.5rem;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        label{
+            font-size: 1.5rem;
+        }
+        input{
+            font-size: 1rem;
+        }
+        }
+        
+}

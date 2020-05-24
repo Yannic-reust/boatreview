@@ -4,6 +4,7 @@ import Contact from './views/Contact/contact.vue'
 import Reviews from './views/Reviews/reviews.vue'
 import Buy from './views/Buy/buy.vue'
 import Addblog from './views/Addblog/addblog.vue'
+import Impressum from './views/Impressum/impressum.vue'
 
 export default[
     {path:'/', component: Home},
@@ -12,4 +13,5 @@ export default[
     {path:'/Reviews', component: Reviews},
     {path:'/Buy', component: Buy},
     {path:'/Addblog', component: Addblog},
+    {path:'/Impressum', component: Impressum},
 ]
