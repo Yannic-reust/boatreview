@@ -10,7 +10,7 @@
             <p>{{post.CatchText}}</p>
          </div>
         
-        <img :src="post.ImageURL"  class="preview-image">
+        <img :src="post.ImageURL" :alt="post.Boatname" :title="post.Boatname" class="preview-image">
         <div class="info">
           <p>Price: {{post.Price}} CHF</p>
           <p>Contact: {{post.Contact}}</p>
