@@ -1,4 +1,6 @@
 @import url("https://use.fontawesome.com/releases/v5.0.6/css/all.css");
+@import url("https://use.typekit.net/pjc5rrk.css");
+
 
 #home{
     #main{
@@ -9,7 +11,9 @@
         margin-top: 2.5%;
         margin-left: 2.5%;
         margin-bottom: 2.5%;
-    }
+        font-family: degular, sans-serif;
+        font-weight: 600;
+ }
    .content{
     display: flex;
     justify-content: space-between;

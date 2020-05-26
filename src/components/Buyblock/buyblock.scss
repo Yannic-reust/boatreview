@@ -3,6 +3,9 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    p{
+        font-family: bebas-neue-pro, sans-serif;
+    }
     
     .content{
         display: flex;
@@ -27,6 +30,9 @@
             padding: 12px;
             font-weight: 600;
             font-size: 1.8rem;
+            font-family: degular, sans-serif;
+            font-weight: 600;
+
      
         }
         .textblock{
@@ -35,12 +41,18 @@
                 padding: 6px;
                 font-weight: 100;
                 font-size: 1.2rem;
+                font-family: bebas-neue-pro, sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                
             }
          
             p{
                 padding: 6px;
                 padding-top: 0px;
                 font-size: 1rem;
+                font-family: bebas-neue-pro, sans-serif;
+                
             }
         }
        
@@ -53,6 +65,7 @@
         .info{
             margin-left: 6px;
             margin-bottom: 6px;
+           
         }
     }
 }
