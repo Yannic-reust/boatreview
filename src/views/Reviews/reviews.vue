@@ -1,7 +1,6 @@
 <template>
   <div id="reviews" >
        <Header-app v-bind:moblieView="moblieView"></Header-app>
-      
       <div class="content">
       <h1>Reviews</h1>
 
