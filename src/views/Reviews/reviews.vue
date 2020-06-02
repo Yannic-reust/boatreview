@@ -4,7 +4,7 @@
       <div class="content">
       <h1>Reviews</h1>
 
-      <div v-for="(post, i) in posts.slice(0, 4)" :key="i" class="block">
+      <div v-for="(post, i) in posts.slice(0, 5)" :key="i" class="block">
         <div class="textblock">
          <h3>{{post.BoatName}}</h3>
           <h4>{{post.Heading}}</h4>
