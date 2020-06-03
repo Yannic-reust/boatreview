@@ -15,7 +15,6 @@
         .wrapper{
             display: flex;
             justify-content: space-between;
-            background-color: yellow;
             width: 45%;
             height: 50vh;
             margin-right: 10%;
@@ -25,6 +24,7 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
+            
         }
         .portrait{
             width: 45%;
@@ -49,6 +49,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            
             #textarea{
                 resize: none;
             }
@@ -80,21 +81,23 @@ $breakpoint-small-desktop: 1300px;
     .content{
         flex-direction: column !important;
         margin-left: 5% !important;
-        width: 80% !important;
+        width: 90% !important;
 
         
         .wrapper{
             width: 100% !important;
-            background-color: red !important;
             margin: 0% !important;
     
         }
-    }
-    
-}
-@media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-phone) {
+        .form{
+            width: 100% !important;
+        }
+        
 
-}
-@media (max-width: $breakpoint-small-desktop) and (min-width: $breakpoint-tablet) {
-    
+    }
+    .maps{
+        width: 90% !important;
+        margin-left: 5% !important;
+
+    }
 }
