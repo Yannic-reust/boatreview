@@ -32,10 +32,16 @@
                     font-size: 14px;
                 }
             }
-            img{
+            .preview-image{
+             
+            
                 width: 30%;
                 margin: 1%;
+                .img{
+                    width: 100%;
+                }
             }
+           
         }
     }
 }
@@ -66,10 +72,8 @@ $breakpoint-small-desktop: 1300px;
             }
         }
 
-        img{
+        .preview-image{
             width: 98% !important;
-        
-          
         }
     }
 }
@@ -92,7 +96,7 @@ $breakpoint-small-desktop: 1300px;
                 font-size: 20px !important;
             }
         }
-        img{
+        .preview-image{
             width: 98% !important;
         }
     }
@@ -115,7 +119,7 @@ $breakpoint-small-desktop: 1300px;
                 font-size: 20px !important;
             }
         }
-        img{
+        .preview-image{ 
             width: 50% !important;
         }
     }

@@ -5,7 +5,10 @@
       <h1>Buy</h1>
 
       <div v-for="(post, i) in posts.slice(10, 15)" :key="i" class="block">
-          <img :src="post.ImageURL"  class="preview-image">
+        <div class="preview-image">
+          <img :src="post.ImageURL" class="img">
+        </div>
+          
         <div class="textblock">
          <h3>{{post.BoatName}}</h3>
           <h4>{{post.Heading}}</h4>

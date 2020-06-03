@@ -15,7 +15,7 @@
         .wrapper{
             display: flex;
             justify-content: space-between;
-           
+            background-color: yellow;
             width: 45%;
             height: 50vh;
             margin-right: 10%;
@@ -42,7 +42,6 @@
             justify-content: center;
             
         }
-       
         .form{
 
             height: 50vh;
@@ -70,5 +69,32 @@
        width: 100%;
        margin-bottom: 10%;
     }
+    
+}
+$breakpoint-phone: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-small-desktop: 1300px;
+
+
+@media (max-width: $breakpoint-phone) {
+    .content{
+        flex-direction: column !important;
+        margin-left: 5% !important;
+        width: 80% !important;
+
+        
+        .wrapper{
+            width: 100% !important;
+            background-color: red !important;
+            margin: 0% !important;
+    
+        }
+    }
+    
+}
+@media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-phone) {
+
+}
+@media (max-width: $breakpoint-small-desktop) and (min-width: $breakpoint-tablet) {
     
 }
